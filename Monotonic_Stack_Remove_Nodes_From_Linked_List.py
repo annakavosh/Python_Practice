@@ -36,3 +36,4 @@ node = solution.removeNodes(head1)
 while node:
     print(node.val, end=" -> " if node.next else "\n")
     node = node.next
+
