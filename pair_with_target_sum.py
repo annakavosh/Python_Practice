@@ -12,6 +12,7 @@ class Soultion:
                 right -= 1 # smaller sum
         return [-1,-1] # if not found
 
+# testing
 def main():
     sol = Soultion();
     print(sol.search([1,2,3,4,6], 6))
