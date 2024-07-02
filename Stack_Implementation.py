@@ -1,7 +1,7 @@
 class Stack:
     def __init__(self, size):
         self.stack = [None] * size
-        self.top = -1 #initialize the top pointer to -1, indicating an empty stack
+        self.top = -1 # initialize the top pointer to -1, indicating an empty stack
 
     def push(self, data):
         if self.top == len(self.stack) - 1:
@@ -22,6 +22,7 @@ class Stack:
             raise Exception("Stack is empty")
         return self.stack[self.top]
 
+# testing
     def isEmpty(self):
         return self.top == -1
 
