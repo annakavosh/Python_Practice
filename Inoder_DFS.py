@@ -1,5 +1,5 @@
 ## indored traversal
-
+## Left - Root - Right
 class Node:
     def __init__(self, value):
         self.value = value
@@ -33,4 +33,4 @@ if __name__ == "__main__":
     root.left.right = Node(5)
 
     Inorder(root)
-    
+
