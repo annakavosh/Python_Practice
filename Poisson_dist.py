@@ -2,7 +2,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 
-lambda_ = 5 # Lambda is mean rate, or expeted number of occurances
+"""
+Poisson Distribution assumptions and use cases:
+- Models the count of events occuring in a fixed interval of time or space.
+- Events occur independently and at a constant mean rate (λ).
+- No simultaneous event, events occur one at a time.
+
+Example use case:
+. Number of emails received per day
+. Network traffic ( Packet arrivals)
+
+"""
+
+lambda_ = 5 # Lambda is the mean rate, or expeted number of occurances
 data = np.random.poisson(lambda_, 1000)
 
 plt.figure(figsize=(8,5))
