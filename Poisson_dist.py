@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 
-"""
+print("""
 Poisson Distribution assumptions and use cases:
 - Models the count of events occuring in a fixed interval of time or space.
 - Events occur independently and at a constant mean rate (λ).
@@ -12,7 +12,11 @@ Example use case:
 . Number of emails received per day
 . Network traffic ( Packet arrivals)
 
-"""
+""")
+
+# latex_pmf = r"P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots"
+# print("Poisson PMF:")
+# print(latex_pmf)
 
 lambda_ = 5 # Lambda is the mean rate, or expeted number of occurances
 data = np.random.poisson(lambda_, 1000)
@@ -34,6 +38,3 @@ plt.grid(axis="y", linestyle="--", alpha= 0.7)
 plt.legend()
 plt.show()
 
-latex_pmf = r"P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots"
-print("Poisson PMF:")
-print(latex_pmf)
